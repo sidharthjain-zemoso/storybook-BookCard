@@ -3,7 +3,7 @@
   transition: 0.3s;
   width: 400px;
   margin: 5px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px;
 }
 
 .rectangle {
