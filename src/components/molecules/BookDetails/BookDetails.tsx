@@ -1,5 +1,5 @@
-import BookHeading from "../../atoms/BookHeading/BookHeading";
 import ClockIcon from "../../atoms/ClockIcon/ClockIcon";
+import MoreIcon from "../../atoms/MoreIcon/MoreIcon";
 import "./BookDetails.css";
 
 type BookDetailsProps = {
@@ -18,10 +18,13 @@ const BookDetails: React.FC<BookDetailsProps> = ({
 }: BookDetailsProps) => {
   return (
     <div className={`details-wrapper ${variant}`} {...rest}>
-      <BookHeading heading={bookHeading} />
+      <h2>{bookHeading}</h2>
       <p>{authorName}</p>
       <div className="read-time">
         <ClockIcon /> <span>{minuteRead}-minute read</span>
+      </div>
+      <div className="more-icon-wrapper">
+        <MoreIcon />
       </div>
     </div>
   );

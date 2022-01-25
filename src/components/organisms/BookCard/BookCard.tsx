@@ -1,5 +1,5 @@
 import BookDetails from "../../molecules/BookDetails/BookDetails";
-import ImageDetails from "../../molecules/ImageDetails/ImageDetails";
+import BookImage from "../../atoms/BookImage/BookImage";
 import "./BookCard.css";
 
 type BookCardProps = {};
@@ -7,13 +7,14 @@ type BookCardProps = {};
 const BookCard: React.FC<BookCardProps> = (props) => {
   return (
     <div className="book-card">
-      <ImageDetails />
+      <BookImage />
       <BookDetails
         bookHeading="Beyond Entrepreneurship"
         authorName="Jim Collins & Bill Lazier"
         minuteRead={13}
         variant="none"
       />
+      <div className="rectangle"></div>
     </div>
   );
 };

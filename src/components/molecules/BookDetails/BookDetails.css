@@ -1,13 +1,22 @@
 .details-wrapper {
-  text-align: center;
+  margin-left: 5%;
+}
+
+.details-wrapper > * {
+  margin-top: 7%;
 }
 
 .read-time {
   display: flex;
-  justify-content: center;
 }
 
 .read-time > * {
+  padding-right: 5px;
   text-align: center;
-  padding: 5px;
+}
+
+.more-icon-wrapper > * {
+  float: right;
+  height: 5px;
+  margin-right: 5%;
 }
