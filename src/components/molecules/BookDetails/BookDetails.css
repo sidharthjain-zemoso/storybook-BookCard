@@ -1,0 +1,13 @@
+.details-wrapper {
+  text-align: center;
+}
+
+.read-time {
+  display: flex;
+  justify-content: center;
+}
+
+.read-time > * {
+  text-align: center;
+  padding: 5px;
+}
